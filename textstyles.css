@@ -1,0 +1,78 @@
+.textPageContainer:not(#portfolioContainer) {
+    display: flex;
+    flex-direction: column;
+    max-width: 95%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+.textPageContainer p,
+.textPageContainer b {
+    margin-left: 20px;
+    max-width: 80%;
+    align-self: flex-start;
+}
+.textPageContainer ul {
+    align-self: flex-start;
+    margin-bottom: 10px;
+}
+li, h1, h2, h3 {
+    color: #fff;
+    font-family: "Krona One", sans-serif;
+    text-shadow: 2px 2px black;
+}
+h2 {
+    margin-bottom: 15px;
+}
+p, b {
+    color: #fff;
+    font-family: "Krona One", sans-serif;
+    font-size: 15px;
+}
+p {
+    text-shadow: 3px 3px black;
+}
+b {
+    margin-bottom: 5px;
+    text-shadow: 2px 2px black;
+}
+li {
+    font-size: 18px;
+}
+ul ul {
+    font-size: 14px;
+}
+a,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+a,
+a:hover {
+    color:#fff;
+}
+a:active {
+    color: #9d9d9d;
+}
+/* Whoami -note text */
+.note {
+    font-size: 12px;
+}
+/* Portfolio -page text elements */
+#portfolioContainer {
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+#portfolioContainer ul {
+    margin-bottom: 10px;
+}
+#portfolioContainer li {
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+#contactContainer p {
+    font-size: 15px;
+    text-align: center;
+    align-self: center;
+}

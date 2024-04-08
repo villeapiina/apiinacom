@@ -1,0 +1,4 @@
+Art:
+https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=5&playlistId=PLdhfAbHJjLJ1JIgKFVBctXlclgnmwmCwd&key=AIzaSyC9x1sAz9TmdmsAb5au4y9gJJiqa9h7RP8&pageToken=
+Commerce:
+https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=5&playlistId=PLdhfAbHJjLJ2FdPmgqydYe7cD0J1n9ULL&key=AIzaSyC9x1sAz9TmdmsAb5au4y9gJJiqa9h7RP8&pageToken=
