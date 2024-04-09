@@ -61,10 +61,12 @@ a:active {
 }
 /* Portfolio -page text elements */
 #portfolioContainer {
+    width: 90%;
     margin-left: 20px;
     margin-bottom: 40px;
 }
 #portfolioContainer ul {
+    padding-left: 20px;
     margin-bottom: 10px;
 }
 #portfolioContainer li {

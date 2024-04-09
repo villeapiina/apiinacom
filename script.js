@@ -37,3 +37,13 @@ function getVideos(pageName) {
         }
     })
 }
+// Navigation menu
+/* Open the sidemenu */
+function openMenu() {
+    document.getElementById("sideMenu").style.display = "list-item";
+  }
+  
+  /* Close/hide the sidemenu */
+  function closeMenu() {
+    document.getElementById("sideMenu").style.display = "none";
+  }
