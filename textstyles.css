@@ -13,7 +13,8 @@
 li, h1, h2, h3 {
     font-family: "Krona One", sans-serif;
 }
-li:not(#desktopHeader li):not(.currentPage), h1, h2, h3 {
+li:not(#desktopHeader li):not(.currentPage), 
+h1, h2, h3 {
     color: #fff;
     font-family: "Krona One", sans-serif;
     text-shadow: 2px 2px black;
