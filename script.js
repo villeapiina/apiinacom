@@ -5,7 +5,7 @@ let art = "PLdhfAbHJjLJ1JIgKFVBctXlclgnmwmCwd&key=AIzaSyC9x1sAz9TmdmsAb5au4y9gJJ
 let commercial = "PLdhfAbHJjLJ2FdPmgqydYe7cD0J1n9ULL&key=AIzaSyC9x1sAz9TmdmsAb5au4y9gJJiqa9h7RP8&pageToken="
 
 function getVideos(pageName) {
-    fetch(link + pageName +nextPageToken)
+    fetch(link + pageName + nextPageToken)
     .then((result)=>{
         return(result.json())
     }).then((data)=>{

@@ -37,11 +37,19 @@
                         <img src="images/d9/ig_logo_d9_v2.png" id="ig" class="logo"/>
                     </a>
                 </li>
-                <li>
+                <li id="menuLi">
                     <button type="button" class="headerBtn" onclick="openMenu()">
                         <img src="images/d9/menu_d9.png" id="menu" class="logo"/>
                     </button>
                 </li>
+                <ul id="desktopHeader">
+                    <div id="desktopBorder"></div>
+                    <li><a href="art.html">ART</a></li>
+                    <li><a href="commercial.html">COMMERCIAL</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li class="currentPage">WHO AM I?</li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
             </ul>
             <ul id="sideMenu">
                 <li>
@@ -67,49 +75,54 @@
                 </li>
             </ul>
         </nav>
-        <div class="textPageContainer" id="whoamiContainer">
+        <div id="whoamiContainer" class="container textContainer">
             <h3 class="pageTitles">WHO AM I?</h3>
-            <img class="selfImages" id="whoamiImage" src="images/whoami.jpg"/>
-                <p>Ville Jyväskylästä. </p>
-                <p>Tykkään mun puolisosta, mun työstä ja elokuvista. </p> 
-                <p>
-                    Työskennellessäni pyrin soveltamaan
-                    omia kokemuksiani kuvaksi ja ääneksi,
-                    ja tuottaa sulle niin herkullisia videoita kun vaan pystyn.
-                </p>
-                <p>
-                    Kokemusta löytyy parin vuoden ajalta,
-                    videotuotantojen käsikirjoituksesta jälkituotantoon asti
-                    mm. musiikkivideoiden, mainosten ja lyhytelokuvien parissa.
-                </p> 
-            <h3 class="pageTitles">HOW MUCH?</h3>
-            <b>Alla lista esimerkkihinnoista: </b>
+            <div class="content" id="whoamiContent">
+                <img class="selfImages" id="whoamiImage" src="images/whoami.jpg"/>
+                    <p>Ville Jyväskylästä. </p>
+                    <p>Tykkään mun puolisosta, mun työstä ja elokuvista. </p>
+                    <p>
+                        Työskennellessäni pyrin soveltamaan
+                        omia kokemuksiani kuvaksi ja ääneksi,
+                        ja tuottaa sulle niin herkullisia videoita kun vaan pystymme.
+                    </p>
+                    <p>
+                        Kokemusta löytyy parin vuoden ajalta,
+                        videotuotantojen käsikirjoituksesta jälkituotantoon asti
+                        mm. musiikkivideoiden, mainosten ja lyhytelokuvien parissa.
+                    </p>
+                <h3 class="pageTitles">HOW MUCH?</h3>
+                <b>Alla lista esimerkkihinnoista: </b>
+                    <ul>
+                        <li class="note">
+                            Hinnat sisältävät suunnittelun, laitteiston, kuvaukset,
+                            leikkauksen, värimäärittelyt
+                            ja 2x asiakkaan toivomat muutokset jälkituotantoon.
+                            (leikkaus ja värimäärittelyt)
+                        </li>
+                        <li class="note">Tarkka hinta ja tarjoukset määrittyvät aina projektikohtaisesti. </li>
+                    </ul>
                 <ul>
-                    <li class="note">
-                        Hinnat sisältävät suunnittelun, laitteiston, kuvaukset,
-                        leikkauksen, värimäärittelyt
-                        ja 2x asiakkaan muutokset jälkituotannossa.
-                    </li>
-                    <li class="note">Tarkka hinta ja tarjoukset määrittyvät aina projektikohtaisesti. </li>
+                    <li>Somemainos
+                        <br><p class="small">(30 sekuntia):</p> </li>
+                        <ul>
+                            <li>500e</li>
+                        </ul>
+                    <li>Hääkuvaus: </li>
+                        <ul>
+                            <li>1000e</li>
+                        </ul>
+                    <li>Musiikkivideo: </li>
+                        <ul>
+                            <li>1200e</li>
+                        </ul>
+                    <li>Narratiivinen mainos
+                        <br><p class="small">(60 sekuntia):</p> </li>
+                        <ul>
+                            <li>1500e</li>
+                        </ul>
                 </ul>
-            <ul>
-                <li>Somemainos (30 sekuntia): </li>
-                    <ul>
-                        <li>500e</li>
-                    </ul>
-                <li>Hääkuvaus: </li>
-                    <ul>
-                        <li>1000e</li>
-                    </ul>
-                <li>Musiikkivideo: </li>
-                    <ul>
-                        <li>1200e</li>
-                    </ul>
-                <li>Narratiivinen mainos (60 sekuntia): </li>
-                    <ul>
-                        <li>1500e</li>
-                    </ul>
-            </ul>
+            </div>
         </div>
     </body>
 </html>

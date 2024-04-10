@@ -37,11 +37,19 @@
                         <img src="images/d9/ig_logo_d9_v2.png" id="ig" class="logo"/>
                     </a>
                 </li>
-                <li>
+                <li id="menuLi">
                     <button type="button" class="headerBtn" onclick="openMenu()">
                         <img src="images/d9/menu_d9.png" id="menu" class="logo"/>
                     </button>
                 </li>
+                <ul id="desktopHeader">
+                    <div id="desktopBorder"></div>
+                    <li><a href="art.html">ART</a></li>
+                    <li><a href="commercial.html">COMMERCIAL</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="whoami.html">WHO AM I?</a></li>
+                    <li class="currentPage">CONTACT</li>
+                </ul>
             </ul>
             <ul id="sideMenu">
                 <li>
@@ -67,18 +75,21 @@
                 </li>
             </ul>
         </nav>
-        <div class="textPageContainer" id="contactContainer">
-            <h3 class="pageTitles">CONTACT</h3>
-            <img class="selfImages" id="contactImage" src="images/contact.jpg"/>
-            <p>VIDEOTUOTANTO, EDITOINTI, VÄRIMÄÄRITTELY </p>
-            <p>SÄHKÖPOSTI: </p>
-            <p>
-                <a href="mailto:ville@apiina.com">ville@apiina.com </a>
-            </p>
-            <p>PUHELIN: </p>
-            <p>
-                <a href="tel:+358 45 2664115">+358 45 2664115 </a>
-            </p>
+        <div id="contactContainer" class="container">
+            <div class="content" id="contactContent">
+                <h3 class="pageTitles">CONTACT</h3>
+                <img class="selfImages" id="contactImage" src="images/contact.jpg"/>
+                <p>VIDEOTUOTANTO, EDITOINTI,
+                    <br>VÄRIMÄÄRITTELY </p>
+                <br>
+                <p>SÄHKÖPOSTI:
+                    <br><a class="contactLink" href="mailto:ville@apiina.com">ville@apiina.com </a>
+                </p>
+                <br>
+                <p>PUHELIN:
+                    <br><a class="contactLink" href="tel:+358 45 2664115">+358 45 2664115 </a>
+                </p>
+            </div>
         </div>
     </body>
 </html>

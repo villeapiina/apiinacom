@@ -12,11 +12,11 @@ body:not(#headerBody) {
 }
 .container {
     display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    justify-content: center;
-    align-items: center;
+    max-width: 80%;
     padding-top: 80px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 /* Site buttons */
 .btnContainer {
@@ -30,6 +30,7 @@ body:not(#headerBody) {
         padding: 0px;
         background-color: #6a6a6a;
         border-bottom: solid 3.5px;
+        border-right: solid 3.5px;
         border-color: #8d8d8d;
     }
         .siteBtn:hover {
@@ -72,27 +73,12 @@ body:not(#headerBody) {
     padding-left: 75px;
     padding-right: 75px;
 }
-/* Header */
-.iframeHeader {
-    position: fixed;
-    z-index: 5;
-    width: 100%;
-    height: 100%;
-    border: none;
-    overflow-x: hidden;
-}
-/* Art ja Commercial -sivut */
-.pageTitles {
-    color: #fff;
-    font-family: "Krona One", sans-serif;
-    text-shadow: 3px 3px black;
-    padding: 15px;
-    padding-bottom: 25px;
-}
-
+/* Art and Commercial -pages */
 .youtubeBtn {
-    margin-bottom: 10px;
+    margin: 0px 5px 10px 5px;
     border-bottom: solid 3.5px;
+    border-left: solid 3.5px;
+    border-right: solid 3.5px;
     border-color: #8d8d8d;
 }
     .youtubeBtn:hover, .youtubeBtn:active {
@@ -105,7 +91,7 @@ body:not(#headerBody) {
         .youtubeBtn:active > .youtubeName {
             color: #9d9d9d;
         }
-    /* Nappien padding-bugi */
+    /* Button padding-bugi */
         .youtubeBtn:hover > .youtubeName,
         .youtubeBtn:active > .youtubeName
         {
@@ -119,22 +105,74 @@ body:not(#headerBody) {
         width: 400px;
         object-fit: cover;
     }
-    .youtubeName {
-        color: #fff; 
-        background-color: #6a6a6a;
-        font-family: "Krona One", sans-serif;
-        text-shadow: 1px 1px black;
-        position: relative;
-        z-index: 2;
-        text-align: center;
-        padding: 10px;
-    }
 .selfImages {
-    width: 450px;
-    height: 120px;
     object-fit: cover;
+    border-top: solid 3.5px;
+    border-bottom: solid 3.5px;
+    border-color: #8d8d8d;
     margin-bottom: 40px;
 }
+#whoamiImage {
+    width: 650px;
+    height: 180px;
+}
 #contactImage {
+    width: 650px;
+    height: 180px;
     object-position: 50% 35%;
+}
+/* Text pages  */
+.textContainer {
+    max-width: 90%;
+}
+.content:not(#portfolioContent) {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#portfolioContent {
+    width: inherit;
+    margin-bottom: 40px;
+}
+/* Responsive design */
+@media only screen and (min-width: 700px) {
+    #whoamiImage {
+        width: 100%;
+        height: 200px;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    .container {
+        max-width: 100%;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    #portfolioContainer, #whoamiContainer, #contactContainer {
+        max-width: 52%;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    .container {
+        max-width: 89%;
+    }
+    #portfolioContainer, #whoamiContainer, #contactContainer {
+        max-width: 46%;
+    }
+}
+@media only screen and (min-width: 1920px) {
+    #portfolioContainer, #whoamiContainer, #contactContainer {
+        max-width: 35%;
+    }
+}
+@media only screen and (min-width: 2560px) {
+    .container {
+        max-width: 83%;
+    }
+    #portfolioContainer, #whoamiContainer, #contactContainer {
+        max-width: 30%;
+    }
 }

@@ -1,23 +1,19 @@
-.textPageContainer:not(#portfolioContainer) {
-    display: flex;
-    flex-direction: column;
-    max-width: 95%;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px;
-    margin-bottom: 20px;
-}
-.textPageContainer p,
-.textPageContainer b {
-    margin-left: 20px;
-    max-width: 80%;
+.content p,
+.content b {
     align-self: flex-start;
 }
-.textPageContainer ul {
+.content ul {
     align-self: flex-start;
+    padding-left: 15px;
     margin-bottom: 10px;
 }
+    .content ul ul {
+        padding-left: 20px;
+    }
 li, h1, h2, h3 {
+    font-family: "Krona One", sans-serif;
+}
+li:not(#desktopHeader li), h1, h2, h3 {
     color: #fff;
     font-family: "Krona One", sans-serif;
     text-shadow: 2px 2px black;
@@ -31,17 +27,21 @@ p, b {
     font-size: 15px;
 }
 p {
-    text-shadow: 3px 3px black;
+    text-shadow: 2px 1px black;
 }
 b {
     margin-bottom: 5px;
-    text-shadow: 2px 2px black;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1.5px black;
 }
 li {
     font-size: 18px;
 }
 ul ul {
     font-size: 14px;
+}
+ul ul li {
+    color: #d9d9d9;
 }
 a,
 a:hover,
@@ -55,26 +55,63 @@ a:hover {
 a:active {
     color: #9d9d9d;
 }
-/* Whoami -note text */
+/* Art ja Commercial -sivut */
+.pageTitles {
+    color: #fff;
+    font-family: "Krona One", sans-serif;
+    text-shadow: 3px 3px black;
+    width: 100%;
+    padding: 15px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+.youtubeName {
+    color: #fff;
+    background-color: #6a6a6a;
+    font-family: "Krona One", sans-serif;
+    text-shadow: 1px 1px black;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 10px;
+}
+/* Whoami -texts */
 .note {
     font-size: 12px;
+    color: #d9d9d9;
 }
-/* Portfolio -page text elements */
-#portfolioContainer {
-    width: 90%;
-    margin-left: 20px;
-    margin-bottom: 40px;
+    .note:first-of-type {
+        margin-bottom: 7px;
+    }
+.small {
+    font-size: 16px;
+    margin-bottom: 2px;
 }
-#portfolioContainer ul {
+/* Portfolio -page */
+#portfolioContent ul {
     padding-left: 20px;
     margin-bottom: 10px;
 }
-#portfolioContainer li {
+#portfolioContent li {
     font-size: 15px;
     margin-bottom: 2px;
+    color: #d9d9d9;
 }
-#contactContainer p {
+/* Whoami -page  */
+#whoamiContent p,
+#whoamiContent ul {
+    max-width: 600px;
+}
+/* Contact -page  */
+#contactContent p {
     font-size: 15px;
     text-align: center;
     align-self: center;
 }
+.contactLink,
+.contactLink:hover {
+    color: #d9d9d9;
+}
+    .contactLink:active {
+        color: #9d9d9d;
+    }

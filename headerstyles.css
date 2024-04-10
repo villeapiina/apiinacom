@@ -96,3 +96,27 @@
     height: 25px;
     width: 25px;
 }
+/* Responsive design */
+#desktopHeader {
+    display: none;
+}
+    #desktopHeader a,
+    #desktopHeader a:hover {
+        color: #d9d9d9;
+    }
+    #desktopHeader a:active {
+        color: #9d9d9d;
+    }
+    #desktopBorder {
+        height: 40%;
+        border-left: solid 3.5px #9d9d9d;
+    }
+@media only screen and (min-width: 1280px) {
+    #menuLi {
+        display: none;
+    }
+    #desktopHeader {
+        display: contents;
+        border-left: solid 2px black;
+    }
+}
