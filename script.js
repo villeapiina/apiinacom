@@ -16,7 +16,7 @@ function getVideos(pageName) {
         for(video of videos) {
             videoContainer.innerHTML += `
                 <a type="button" class="youtubeBtn" href="https://www.youtube.com/watch?v=${video.snippet.resourceId.videoId}">
-                    <img class="youtubeImage" src="${video.snippet.thumbnails.maxres.url}">
+                    <img class="youtubeImage" src="${video.snippet.thumbnails.maxres.url}" alt="youtubeReference">
                     <div class="youtubeName">${video.snippet.title}</div>
                 </a>
             `
